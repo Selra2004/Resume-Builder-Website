@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: acc4-backend
+    env: node
+    region: oregon
+    plan: free
+    rootDir: server
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: FRONTEND_URL
+        value: https://jobportal-mcehprsls-rasel-maranas-projects.vercel.app
