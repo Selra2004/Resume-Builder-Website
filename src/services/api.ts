@@ -2,6 +2,9 @@ import axios from 'axios';
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
+// Export base URL for use in components (for static assets like logo)
+export const API_BASE_URL_FOR_ASSETS = API_BASE_URL;
+
 
 // Create axios instance
 const apiClient = axios.create({

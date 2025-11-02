@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
+import { API_BASE_URL_FOR_ASSETS } from '../../services/api';
 import { toast } from 'react-hot-toast';
 import { EyeIcon, EyeSlashIcon, HomeIcon } from '@heroicons/react/24/outline';
 
@@ -97,7 +98,7 @@ export const Login: React.FC = () => {
         <div>
           <div className="mx-auto h-20 w-20 flex items-center justify-center">
             <img 
-              src="/acc-logo.png" 
+              src={`${API_BASE_URL_FOR_ASSETS}/uploads/logo/Logo.png`} 
               alt="ACC Logo" 
               className="h-20 w-20 object-contain"
             />
