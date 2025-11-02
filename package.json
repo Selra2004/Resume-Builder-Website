@@ -16,7 +16,8 @@
     "ai-service:install": "cd recommendation_service && pip install -r requirements-minimal.txt && pip install -r requirements-ml.txt",
     "start": "concurrently \"npm run dev\" \"npm run server\" \"npm run ai-service\"",
     "start:win": "concurrently \"npm run dev\" \"set JWT_SECRET=acc_portal_secret_2024 && npm run server\" \"npm run ai-service\"",
-    "dev:full": "concurrently --names \"Frontend,Backend,AI-Service\" --prefix-colors \"cyan,green,magenta\" \"npm run dev\" \"npm run server\" \"npm run ai-service\""
+    "dev:full": "concurrently --names \"Frontend,Backend,AI-Service\" --prefix-colors \"cyan,green,magenta\" \"npm run dev\" \"npm run server\" \"npm run ai-service\"",
+    "vercel-install": "npm install --legacy-peer-deps"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.9",
