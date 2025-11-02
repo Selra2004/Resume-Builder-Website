@@ -125,7 +125,11 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div className="flex-shrink-0">
               <Link to="/" className="flex items-center space-x-3">
                 <img 
-                  src={`${API_BASE_URL_FOR_ASSETS}/uploads/logo/Logo.png`} 
+                  src={`${API_BASE_URL_FOR_ASSETS}/uploads/logo/Logo.png`}
+                  onError={(e) => {
+                    // Fallback to a placeholder or hide logo if backend not available
+                    (e.target as HTMLImageElement).style.display = 'none';
+                  }} 
                   alt="ACC Logo" 
                   className="w-16 h-16 object-contain"
                 />
@@ -417,7 +421,11 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center space-x-3 mb-4">
                 <img 
-                  src={`${API_BASE_URL_FOR_ASSETS}/uploads/logo/Logo.png`} 
+                  src={`${API_BASE_URL_FOR_ASSETS}/uploads/logo/Logo.png`}
+                  onError={(e) => {
+                    // Fallback to a placeholder or hide logo if backend not available
+                    (e.target as HTMLImageElement).style.display = 'none';
+                  }} 
                   alt="ACC Logo" 
                   className="w-14 h-14 object-contain"
                 />

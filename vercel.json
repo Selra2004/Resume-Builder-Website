@@ -5,9 +5,6 @@
   "outputDirectory": "dist",
   "installCommand": "npm run vercel-install",
   "devCommand": "npm run dev",
-  "env": {
-    "VITE_API_URL": "@vite-api-url"
-  },
   "rewrites": [
     {
       "source": "/(.*)",

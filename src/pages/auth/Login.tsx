@@ -98,7 +98,11 @@ export const Login: React.FC = () => {
         <div>
           <div className="mx-auto h-20 w-20 flex items-center justify-center">
             <img 
-              src={`${API_BASE_URL_FOR_ASSETS}/uploads/logo/Logo.png`} 
+              src={`${API_BASE_URL_FOR_ASSETS}/uploads/logo/Logo.png`}
+              onError={(e) => {
+                // Fallback to placeholder if backend not available
+                (e.target as HTMLImageElement).style.display = 'none';
+              }} 
               alt="ACC Logo" 
               className="h-20 w-20 object-contain"
             />
