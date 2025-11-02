@@ -125,7 +125,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div className="flex-shrink-0">
               <Link to="/" className="flex items-center space-x-3">
                 <img 
-                  src="/uploads/logo/Logo.png" 
+                  src="https://jobportal-three-sigma.vercel.app//uploads/logo/Logo.png" 
                   alt="ACC Logo" 
                   className="w-16 h-16 object-contain"
                 />
@@ -417,7 +417,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center space-x-3 mb-4">
                 <img 
-                  src="/uploads/logo/Logo.png" 
+                  src="https://jobportal-three-sigma.vercel.app//uploads/logo/Logo.png" 
                   alt="ACC Logo" 
                   className="w-14 h-14 object-contain"
                 />
