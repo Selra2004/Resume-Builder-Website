@@ -1,0 +1,9 @@
+# Machine Learning requirements (install after minimal)
+numpy==1.24.3
+pandas==2.0.3
+scikit-learn==1.3.0
+sentence-transformers==2.2.2
+
+# Optional advanced ML (comment out if installation fails)
+# torch==2.1.0
+# transformers==4.35.2
