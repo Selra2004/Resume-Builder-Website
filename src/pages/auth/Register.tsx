@@ -146,7 +146,7 @@ export const Register: React.FC = () => {
         <div>
           <div className="mx-auto h-20 w-20 flex items-center justify-center">
             <img 
-              src="/Logo.png" 
+              src="/acc-logo.png" 
               alt="ACC Logo" 
               className="h-20 w-20 object-contain"
             />
