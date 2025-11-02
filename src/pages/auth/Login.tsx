@@ -97,7 +97,7 @@ export const Login: React.FC = () => {
         <div>
           <div className="mx-auto h-20 w-20 flex items-center justify-center">
             <img 
-              src="/uploads/logo/Logo.png" 
+              src="/Logo.png" 
               alt="ACC Logo" 
               className="h-20 w-20 object-contain"
             />

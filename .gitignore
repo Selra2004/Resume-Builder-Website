@@ -59,8 +59,9 @@ coverage.xml
 *.sqlite3
 *.db
 
-# Uploads and user generated content
+# Uploads and user generated content (but keep public assets)
 uploads/
+!uploads/logo/
 server/uploads/
 */uploads/
 temp/
