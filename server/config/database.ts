@@ -6,11 +6,14 @@ let connection: mysql.Connection | null = null;
 export const createConnection = async () => {
   try {
     connection = await mysql.createConnection({
-      host: process.env.DB_HOST || 'localhost',
-      user: process.env.DB_USER || 'root',
-      password: process.env.DB_PASSWORD || '',
-      database: process.env.DB_NAME || 'acc_database',
-      port: parseInt(process.env.DB_PORT || '3306'),
+      host: process.env.DB_HOST,
+      user: process.env.DB_USER,
+      password: process.env.DB_PASSWORD,
+      database: process.env.DB_NAME,
+      port: parseInt(process.env.DB_PORT),
+      ssl: {
+    ca: fs.readFileSync('/etc/secrets/aiven-ca.pem')
+  },
       timezone: '+00:00',
       dateStrings: true,
     });
