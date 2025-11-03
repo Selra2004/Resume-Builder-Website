@@ -11,9 +11,6 @@ export const createConnection = async () => {
       password: process.env.DB_PASSWORD,
       database: process.env.DB_NAME,
       port: parseInt(process.env.DB_PORT),
-      ssl: {
-    ca: fs.readFileSync('/etc/secrets/aiven-ca.pem')
-  },
       timezone: '+00:00',
       dateStrings: true,
     });
