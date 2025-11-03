@@ -1,4 +1,5 @@
 import mysql from 'mysql2/promise';
+import fs from 'fs';
 import { logger } from '../utils/logger.js';
 
 let connection: mysql.Connection | null = null;
@@ -13,6 +14,9 @@ export const createConnection = async () => {
       port: parseInt(process.env.DB_PORT || '3306'),
       timezone: '+00:00',
       dateStrings: true,
+      ssl: {
+        ca: fs.readFileSync('/etc/secrets/aiven-ca.pem')
+      }
     });
 
     // Test the connection
