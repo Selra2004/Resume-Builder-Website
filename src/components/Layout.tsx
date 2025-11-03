@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
-import { userAPI } from '../services/api';
+import { userAPI, API_BASE_URL_FOR_ASSETS } from '../services/api';
 import { 
   HomeIcon,
   BriefcaseIcon,
