@@ -15,7 +15,7 @@ export const createConnection = async () => {
       timezone: '+00:00',
       dateStrings: true,
       ssl: {
-        ca: fs.readFileSync('/etc/secrets/aiven-ca.pem')
+        ca: fs.readFileSync('/etc/secrets/ca.pem')
       }
     });
 
